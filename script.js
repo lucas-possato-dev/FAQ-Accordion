@@ -7,6 +7,14 @@ function handleClick(event) {
   const index = Array.from(questions).indexOf(clickedButton);
   const answer = answers.item(index);
   const arrow = arrows.item(index);
+  const question = questions.item(index)
+
+  questions.forEach((questionElement) => {
+    if(questionElement !== question) {
+      questionElement.classList.remove("color");
+    }
+    
+  });
 
   answers.forEach((answerElement) => {
     if (answerElement !== answer) {
@@ -23,11 +31,11 @@ function handleClick(event) {
 
   arrow.classList.toggle("ativado");
   answer.classList.toggle("active");
+  question.classList.toggle("color");
 }
 
 questions.forEach((question) => {
   question.addEventListener("click", handleClick);
 })
 
-console.log(arrows);
 

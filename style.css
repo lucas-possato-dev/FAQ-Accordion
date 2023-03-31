@@ -137,6 +137,11 @@ dt {
   justify-content: space-between;
 }
 
+.btn.color {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%) ;
+}
+
 .questionSection::after {
   content: "";
   height: 1px;
