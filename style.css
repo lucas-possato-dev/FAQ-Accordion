@@ -109,11 +109,9 @@ h1 {
   }
 }
 
-dl {
-  max-width: 500px;
-}
 
-dd {
+
+.wasDD {
   max-width: 325px;
   font-size: 0.75em;
   color: hsl(237, 12%, 33%);
@@ -121,7 +119,7 @@ dd {
   display: none;
 }
 
-dd.active {
+.wasDD.active {
   display: block;
   margin-left: 15px;
 }
@@ -131,7 +129,7 @@ dd.active {
   width: 70%;
 }
 
-dt {
+.wasDT {
   display: flex;
   position: relative;
   justify-content: space-between;

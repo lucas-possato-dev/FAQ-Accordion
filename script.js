@@ -1,6 +1,6 @@
-const questions = document.querySelectorAll("dt .btn");
-const answers = document.querySelectorAll("section dd");
-const arrows = document.querySelectorAll("dt .arrow img");
+const questions = document.querySelectorAll(".wasDT .btn");
+const answers = document.querySelectorAll("section .wasDD");
+const arrows = document.querySelectorAll(".wasDT .arrow img");
 
 function handleClick(event) {
   const clickedButton = event.currentTarget;
